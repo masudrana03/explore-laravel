@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Livewire Component</title>
+
+    <!-- Include wire-extender.js script -->
+    <script src="https://explore-laravel.test/vendor/wire-elements/wire-extender.js"></script>
+</head>
+<body>
+    <!-- Embed the Livewire component -->
+    <livewire data-component="counter" data-params='{"count":10}'>
+        <!-- Placeholder for when the component is loading -->
+        <p>Loading...</p>
+    </livewire>
+
+    <!-- Optional: Customize URLs for livewire.js, update URI, and embed URI -->
+    <script src="https://explore-laravel.test/vendor/wire-elements/wire-extender.js"
+            data-livewire-asset-uri="https://explore-laravel.test/livewire/livewire.js"
+            data-update-uri="https://explore-laravel.test/livewire/update"
+            data-embed-uri="https://explore-laravel.test/livewire/embed"></script>
+</body>
+</html>
+
