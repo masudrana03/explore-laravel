@@ -1,24 +1,22 @@
 <div>
-
-    <h1>{{ $count }}</h1>
+    Count: {{ $count }}
 
     <button wire:click="increment">+</button>
-
     <button wire:click="decrement">-</button>
-
-
-
-
-    <div class="container">
-       <h1>Shopify Announce It Embed Successfully...</h1>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 My Simple Page. All rights reserved.</p>
-    </footer>
-
-
-
 </div>
 
+@assets
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+@endassets
 
+@script
+    <script>
+        new Pikaday({
+            field: $wire.$el.querySelector('[data-picker]')
+        });
+
+
+        console.log("Masud Rana ");
+    </script>
+@endscript
